@@ -3,6 +3,7 @@ import Head from 'next/head'
 import NProgress from 'nprogress'
 import Router from 'next/router'
 import Link from 'next/link'
+import 'nprogress/nprogress.css'
 
 
 Router.onRouteChangeStart = url => NProgress.start()
