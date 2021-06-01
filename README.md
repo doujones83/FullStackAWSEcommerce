@@ -17,3 +17,11 @@ npm init -y has allowed me to create an npm folder with typing in, any of my inf
 npm i --save next react react-dom <--- I had installed Next.js and ReactDom router into this application.
 
 May 31st 2021 -->> Added some features that would enhance API Calls from Backend to Frontend. Like npm nprogress.
+
+*
+About how to remove node_modules
+git rm -r --cached node_modules
+git commit -m 'Remove the now ignored directory node_modules'
+git push origin master
+Then check your repository.
+*
