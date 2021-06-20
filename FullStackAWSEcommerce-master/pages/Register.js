@@ -7,22 +7,31 @@ const Register = () => {
         email: '',
         password: '',
         error: '',
-        registerButton: '',
+        registerButton: 'Submit Info',
         perfect: ''
     })
 
     const applicationForm = () => (
         <form>
             <div className="form-group">
-               <input type="text" className="form-control" placeholder="Enter your Full Name"/> 
+               <input type="text" 
+               className="form-control" 
+               onChange={handleChange('name')}
+               placeholder="Enter your Full Name"/> 
             </div>
             <br />
             <div className="form-group">
-               <input type="email" className="form-control" placeholder="Enter your Email"/> 
+               <input type="email" 
+               className="form-control" 
+               onChange={handleChange('email')}
+               placeholder="Enter your Email"/> 
             </div>
             <br />
             <div className="form-group">
-               <input type="password" className="form-control" placeholder="Enter your Password"/> 
+               <input type="password" 
+               className="form-control" 
+               onChange={handleChange('password')}
+               placeholder="Enter your Password"/> 
             </div>
             <br />
             <div className="form-group">
