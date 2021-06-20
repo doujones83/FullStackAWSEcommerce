@@ -22,12 +22,13 @@ const Register = () => {
      const { name, email, password, error, registerButton, perfect } = state;
 
      const handleSubmit = (e) => {
-
+        e.preventDefault()
      }
     const applicationForm = () => (
         <form onSubmit={handleSubmit}>
             <div className="form-group">
                <input type="text" 
+               value={ name }
                className="form-control" 
                onChange={handleChange('name')}
                placeholder="Enter your Full Name"/> 
@@ -35,6 +36,7 @@ const Register = () => {
             <br />
             <div className="form-group">
                <input type="email" 
+               value={ email }
                className="form-control" 
                onChange={handleChange('email')}
                placeholder="Enter your Email"/> 
@@ -42,13 +44,14 @@ const Register = () => {
             <br />
             <div className="form-group">
                <input type="password" 
+               value={ password }
                className="form-control" 
                onChange={handleChange('password')}
                placeholder="Enter your Password"/> 
             </div>
             <br />
             <div className="form-group">
-            <button className="btn btn-outline-warning">{state.registerButton}</button>
+            <button className="btn btn-outline-warning">{registerButton}</button>
             </div>
         </form>
     )
