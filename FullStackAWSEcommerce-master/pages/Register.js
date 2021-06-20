@@ -11,8 +11,17 @@ const Register = () => {
         perfect: ''
     })
 
+     const handleChange = (name) => (e) => {
+         setState({...state, [name]: e.target.value,
+             error: '', perfect: '',
+            registerButton: 'Submit Info'
+        })
+     }
+     const handleSubmit = (e) => {
+
+     }
     const applicationForm = () => (
-        <form>
+        <form onSubmit={handleSubmit}>
             <div className="form-group">
                <input type="text" 
                className="form-control" 
@@ -35,7 +44,7 @@ const Register = () => {
             </div>
             <br />
             <div className="form-group">
-            <button className="btn btn-outline-warning">Submit Info</button>
+            <button className="btn btn-outline-warning">{state.registerButton}</button>
             </div>
         </form>
     )
