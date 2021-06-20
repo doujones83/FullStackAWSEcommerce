@@ -13,10 +13,14 @@ const Register = () => {
 
      const handleChange = (name) => (e) => {
          setState({...state, [name]: e.target.value,
-             error: '', perfect: '',
-            registerButton: 'Submit Info'
+             error: '', 
+             perfect: '',
+             registerButton: 'Submit Info'
         })
      }
+     
+     const { name, email, password, error, registerButton, perfect } = state;
+
      const handleSubmit = (e) => {
 
      }
