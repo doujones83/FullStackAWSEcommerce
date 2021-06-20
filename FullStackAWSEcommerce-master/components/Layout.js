@@ -23,21 +23,21 @@ const Layout = ({ children }) => {
         <ui className="nav nav-tabs bg-primary">
             <li className="nav-item">
               <Link href="/">
-                <a className = "nav-link text-dark" href="#">Home Page</a>
+                <a className = "nav-link text-dark" href="">Home Page</a>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/login">
-                <a className = "nav-link text-dark" href="#">Login</a>
+                <a className = "nav-link text-dark" href="">Login</a>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/register">
-                <a className = "nav-link text-dark" href="#">Register</a>
+                <a className = "nav-link text-dark" href="">Register</a>
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/">
+              <Link href="/logout">
                 <a className = "nav-link text-dark" href="#">Logout</a>
               </Link>
             </li>
